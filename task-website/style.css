@@ -1,0 +1,128 @@
+/* ----- Variables for colors and font----- */
+:root {
+  --green-dark:   #1a5e1a;  /* For background */
+  --green-mid:    #2d8a2d;  /* For section */
+  --white:        #eeeeee;  /* For text */
+  --font-main:    'Segoe UI'; /* Personal favorite font */
+}
+
+/* First, make a reset for everything first, with * denoting for everything */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ----- Body: the whole page ----- */
+body {
+  background-color: var(--green-dark);  /* background color */
+  color: var(--white);                  /* text color */
+  font-family: var(--font-main);        /* font-family */
+  line-height: 1.4;                     /* spacing elements for comfort*/
+}
+
+/* ----- Header ----- */
+.site-header {
+  text-align: center;                  /* To make it more neat */
+  padding: 3em 1.6em 0em;              /* The padding is for the top, left, right and bottom */
+  background: var(--green-dark);       /* Use the variable made before */
+}
+
+/* Profile photo circle */
+.avatar-wrapper {
+  display: inline-block;               /* to center the avatar */
+  margin-bottom: 1.2rem;               /* Make it not touching the name text */
+}
+
+/* Avatar image */
+.avatar {
+  width: 140px;                        /* Size of the avatar */
+  height: 140px;                       /* Same with above */
+  border-radius: 50%;                  /* 50% + 50% = 100%, which means a circle */
+  border: 4px solid var(--white);      /* Make a border for it */
+}
+
+/* Name heading */
+.name {
+  font-size: 2.7rem;                    /* Make the name big to be noticed*/
+  font-weight: 800;                     /* Make the font bold for user to read */
+  color: var(--white);                  /* text color */
+}
+
+/* Subtitle */
+.sub-title {
+  font-size: 1.1rem;                    /* Make the subtitle big enough but not too big */
+  margin-bottom: 0.5rem;                /* Margin to keep the subtitle spacey */
+}
+
+/* ----- Main Content ----- */
+main {
+  padding: 2rem 1.2rem;                /* Padding of Top-bottom and left-right */
+  display: flex;                       /* flexbox to make it easier to center the content */
+  flex-direction: column;              /* stack sections top to bottom */
+  gap: 1.6rem;                         /* space between each card*/
+}
+
+/* ----- Card ----- */
+.card {
+  background-color: var(--green-mid);   /* background color for card */
+  border-radius: 12px;                   /* Make it rounded in edges */
+  padding: 1.8rem 2rem;                 /* Padding of Top-bottom and left-right */
+}
+
+/* Section headings inside cards */
+.section-title {
+  font-size: 1.6rem;                      /* Size of the heading */
+  margin-bottom: 0.9rem;                  /* space between heading and content */
+  color: var(--white);                    /* text color */
+  border-bottom: 2px solid var(--white);  /* border under the heading */
+  padding-bottom: 0.4rem;                 /* space between heading and border */
+}
+
+/* ----- Images inside sections ----- */
+.section-img {
+  width: 100%;                              /* to make it full width appropriately*/
+  border-radius: 10px;                      /* To round the image edges */
+  margin-bottom: 1rem;                      /* Again, space between image and next content to make it looks spacey */
+}
+
+/* ----- Grid (3 columns side by side) ----- */
+.hobby-grid {
+  display: flex;                            /* flexbox for making the grid aligned */
+  gap: 1rem;                                /* Make sure it is not touching anytnig */
+  justify-content: center;                  /* Center the grid */
+}
+
+/* ----- Hobby wrapper ----- */
+.hobby-item {
+  text-align: center;                       /* Center the text */
+  background: var(--green-dark);            /* Green background color, make it different with the card background */
+  border-radius: 8px;                       /* Border radius for the item */
+  padding: 0.8rem;                          /* Make sure the item is not touching anything on other edges */
+}
+
+/* ----- Hobby image ----- */
+.hobby-img {
+  width: 100%;                              /* Width 100% for approprite display */
+  border-radius: 8px;                       /* Round the edges, again */
+  margin-bottom: 1rem;                      /* Make sure the photo did not touch the text */
+}
+
+/* ----- Duck ----- */
+.duck-img {
+  display: block;                           /* To center the image */
+    width: 160px;                           /* Width for the image */
+    height: 160px;                          /* Height for the image */
+  border-radius: 50%;                       /* 50% + 50% = 100%, which means a circle */
+  margin: 0 auto 1.2rem;                    /* Keep it on the center with top | left and right | bottom order */
+  border: 4px solid var(--white);           /* White border for the image */
+}
+
+/* ----- Button ----- */
+.cta-btn {
+  margin-top: 1rem;                         /* Make sure the button is not touching anything */ 
+  padding: 0.75rem 1rem;                    /* Make sure the button is big enough for the text */
+  background-color: var(--white);           /* To make it white */
+  color: var(--green-dark);                 /* Contrasting with the background color */
+  border: none;                             /* Remove the default border */        
+  border-radius: 10px;                      /* Make the button have round edges */
+}

@@ -1,0 +1,111 @@
+<!-- Remember: comments is in this format-->
+
+<!-- Standard initiation for what type of document is this and its language-->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <!-- Title shown on the browser tab -->
+    <title>Fauzan Hanandito – Portfolio</title>
+    
+    <!-- Link to for styling -->
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+
+  <body>
+
+    <!-- Top page-->
+    <header class="site-header">
+
+      <!-- Profile photo placeholder -->
+      <div class="avatar-wrapper">
+        <img class="avatar" src="assets/Linkedin 1 Transparent 1.png"/>
+      </div>
+
+      <!-- Name and short title -->
+      <h1 class="name">Fauzan Hanandito</h1>
+      <p class="subtitle">Programming Teacher · Math Lover · Gamer</p>
+    </header>
+
+    <!-- Main page -->
+    <main>
+
+      <!-- About Section -->
+      <section class="card">
+        <h2 class="section-title">Who is this?</h2>
+        <p>
+          Name's <strong>Dito</strong>, legit human! I am:
+          <ul>
+            <li><strong>Progammer</strong> who loves to code complicated bug</li>
+            <li><strong>Math lover </strong>who did a lot of mathematics olympiad before</li>
+            <li><strong>Gamer</strong> and doing some pew pew to robots</li>
+            <li><strong>Rubber duck fan</strong>. That is important!</li>
+          </ul>
+        </p>
+      </section>
+
+      <!-- ---------- Job Section ---------- -->
+      <section class="card">
+        <h2 class="section-title">What I have done?</h2>
+
+        <!-- Placeholder image for job/workspace -->
+        <img class="section-img" src="assets/workspace.png"/>
+
+        <p>I do and teach programming and mathematics to students of all ages.</p>
+        <p>My method is to keep it simple, stay focused, and play around while you can.</p>
+        <p>Also, drinks a lot of water.</p>
+        
+      </section>
+
+      <!-- ---------- Hobbies Section ---------- -->
+      <section class="card" id="hobbies">
+        <h2 class="section-title">Some quirky stuff</h2>
+
+        <!-- Three hobby cards side by side -->
+        <div class="hobby-grid">
+
+          <div class="hobby-item">
+            <img class="hobby-img" src="assets/code.jpeg"/>
+            <p>Programming</p>
+          </div>
+
+          <div class="hobby-item">
+            <img class="hobby-img" src="assets/math.jpeg"/>
+            <p>Mathematics</p>
+          </div>
+
+          <div class="hobby-item">
+            <img class="hobby-img" src="assets/game.jpeg"/>
+            <p>Video Games</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ---------- Pet Section  ---------- -->
+      <section class="card">
+        <h2 class="section-title">Best pets</h2>
+        <img class="duck-img"src="assets/duck.jpeg" id="duck"/>
+        <p>Meet my best debugging buddy: <strong>Duck Rubberbington</strong></p>
+        <p>Complaining code to the duck helps to find bugs.</p>
+        <p>Try it! It works!
+      </section>
+
+      <!-- ---------- Hello Section---------- -->
+      <section class="card">
+        <h2 class="section-title">Quick! Click!</h2>
+        <p>Click me for surprise!</p>
+
+        <!-- Button triggers a fun alert (handled in script.js) -->
+        <button class="cta-btn" id="contact-btn">Send a Message</button>
+      </section>
+
+    </main>
+
+    <!-- Link to our tiny JavaScript file, runs after the page loads -->
+    <script src="script.js"></script>
+
+  </body>
+</html>
